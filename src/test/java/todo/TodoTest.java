@@ -43,9 +43,9 @@ public class TodoTest {
 
     @Test
     void deleteATaskSuccessfully(){
-        todoMVCPage.createNewTask("task 1");
+        todoMVCPage.createNewTask("task 2");
         int beforeDelete = todoMVCPage.getItemsLeft();
-        todoMVCPage.delete("task 1");
+        todoMVCPage.delete("task 2");
         int afterDelete = todoMVCPage.getItemsLeft();
         Assert.assertEquals(beforeDelete-afterDelete,1);
     }

@@ -11,10 +11,12 @@ public class TodoMVCPage {
         visit("https://todomvc.com/examples/vanillajs/#/");
     }
 
-    public void createNewTask(String name){senKeys(By.className("new-todo"),name+Keys.ENTER);
+    public void createNewTask(String name){
+        senKeys(By.className("new-todo"),name+Keys.ENTER);
     }
 
     public String getLatestTaskName(){
+
         return getText(By.cssSelector(".todo-list > li:last-child"));
     }
 
