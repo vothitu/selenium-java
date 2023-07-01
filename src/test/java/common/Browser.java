@@ -3,6 +3,7 @@ package common;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -20,6 +21,8 @@ public class Browser {
 
     public static void launch(String browserName) {
         if (browserName.equalsIgnoreCase("chrome")) {
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless=new");
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
