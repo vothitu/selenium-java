@@ -1,0 +1,8 @@
+<suite name="To Do MVC">
+    <test name="Unit Metric on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="todo.TodoTest"/>
+        </classes>
+    </test>
+</suite>
