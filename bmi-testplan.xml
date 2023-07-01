@@ -1,0 +1,20 @@
+<suite name="Body Mass Index Calculator">
+    <test name="Unit Metric on Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="caculator.CaculatorTest"/>
+        </classes>
+    </test>
+    <test name="Unit Metric on Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="caculator.CaculatorTest"/>
+        </classes>
+    </test>
+    <test name="Unit Metric on edge">
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="caculator.CaculatorTest"/>
+        </classes>
+    </test>
+</suite>
