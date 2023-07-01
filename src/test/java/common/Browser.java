@@ -23,7 +23,7 @@ public class Browser {
         if (browserName.equalsIgnoreCase("chrome")) {
             ChromeOptions chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("--headless=new");
-            driver = new ChromeDriver();
+            driver = new ChromeDriver(chromeOptions);
         } else if (browserName.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
         } else if (browserName.equalsIgnoreCase("edge")) {
